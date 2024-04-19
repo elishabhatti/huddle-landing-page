@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url(./images/bg-desktop.svg);
+      background-repeat: no-repeat;
+      background-color: hsl(257, 40%, 49%);
+    }
+    .icon {
+      font-size: 30px;
+      color: white;
+    }
+    .btn {
+      border-radius: 100%;
+      background-color: transparent;
+      border: 1px solid white;
+      display: flex;
+      margin: 8px;
+      padding: 10px;
+
+    }
+    .icon:hover {
+      color:hsl(300, 69%, 71%);
+      transition: all 0.35s;
+    }
+    .btn:hover {
+      transition: all 0.35s;
+      border-color:hsl(300, 69%, 71%);
+    }
+    .btn-1 {
+      padding: 10px;
+      width: 150px;
+      color: transparent;
+      font-size: 16px;
+      color: hsl(257, 40%, 49%);
+      background-color: white;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 1px 1px 1px 1px rgb(85, 84, 84);
+    }
+    .btn-1:hover {
+      transition: all 0.35s;
+      background: hsl(300, 69%, 71%);
+    }
+    .heading {
+      padding: 2rem;
+
+    }
+    h1, p {
+      font-family: 'Open Sans';
+      color: white;
+    }
+    p {
+      font-size: 21px;
+    }
+    .btn-1 {
+      font-family: 'Open Sans';
+
+    }
+    h1, p, .btn-1 {
+      margin-top: 30px;
+    }
+    .img {
+      max-width: 100%;
+      margin-right: 25px;
+      float: left;
+    }
+    .wrapper {
+      padding: 2rem;
+    }
+    .foot {
+      display: flex;
+      justify-content: end;
+      padding: 2rem;
+      margin-top: 130px;
+
+    }
+
+    @media (max-width:1205px) {
+      .wrapper {
+        flex-direction: column;
+      }
+      h1, p {
+        text-align: center;
+      }
+      .btn-1 {
+        width: 250px;
+      }
+      .img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <div class="wrapper">
+      <img class="img" src="./images/illustration-mockups.svg" alt="">
+      <div class="text-box">
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+            Create connections with your users as you engage in genuine discussion. </p>
+            <p><button class="btn-1">Register</button></p>
+          </div>
+        </div>
+        <div class="foot" id="foot">
+        <button class="btn">
+          <ion-icon class="icon" name="logo-facebook"></ion-icon>
+      </button>
+      <button class="btn">
+        <ion-icon class="icon" name="logo-twitter"></ion-icon>
+      </button>
+      <button class="btn">
+        <ion-icon class="icon" name="logo-instagram"></ion-icon>
+      </button>
+    </div>
+  </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
